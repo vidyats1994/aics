@@ -1,4 +1,3 @@
--*- mode: markdown; -*-
 
 # Resources
 
