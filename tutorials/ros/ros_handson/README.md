@@ -1,10 +1,15 @@
 # ROS Handson
-A quick tutorial for ROS
+A quick tutorial for ROS. 
 
 The introductory slides for ROS is available here:
-Nov 2018 https://docs.google.com/presentation/d/19Jux1hVIHitNU_VemnwrXorucI4A1l9PiAs1C_yQmpY
-Nov 2017 https://docs.google.com/presentation/d/1IMnimDSfmhllHSQcyfhACHd52AuHpX0Tv_qRDCdptJ0
 
+* Nov 2018 https://docs.google.com/presentation/d/19Jux1hVIHitNU_VemnwrXorucI4A1l9PiAs1C_yQmpY
+* Nov 2017 https://docs.google.com/presentation/d/1IMnimDSfmhllHSQcyfhACHd52AuHpX0Tv_qRDCdptJ0
+
+# Requirements
+
+* Ubuntu 16.04 
+* ROS Kinetik
 
 # Step-by-step 
 
@@ -229,7 +234,6 @@ We often need to record all topics at once to be able to replicate them later. R
 
 ```
 mkdir ~/bagfiles
-
 ```
 
 While two nodes are running, we can open another terminal and record them all in one file:
