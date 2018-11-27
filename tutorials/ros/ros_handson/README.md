@@ -11,7 +11,7 @@ The introductory slides for ROS is available here:
 * Ubuntu 16.04 
 * ROS Kinetik
 
-You can install latest version of Virtual Box and its extesion pack, then download/run this Ubuntu machine with ROS:
+You can install latest version of [Virtual Box](https://www.virtualbox.org/wiki/Downloads) and its extesion pack, then download/run this Ubuntu machine with ROS:
 https://gubox.box.com/s/spdikbi252bcrgy3qbwn963y0vqjfzqw
 
 (additional intorduction for kinect)
