@@ -37,7 +37,7 @@ ROS_ETC_DIR=/opt/ros/kinetic/etc/ros
 Run `source /opt/ros/kinetic/setup.bash` if the environment was not ready.
 
 
-#### 2. Create a Workspace
+### 2. Create a Workspace
 'catkin' is a build system based on CMake and extended with Python.
 most famouse IDEs have their own build system to maintain processes 
 related to maintainig packages in a project and run them for test.
@@ -66,7 +66,8 @@ The workspace forlder is part of the `ROS_PACKAGE_PATH` for example
 
 In order to understand the ROS file system and folders follow [the ROS tutorial](http://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem). 
 
-#### 3. Create and build a package
+### 3. Create and build a package
+
 Within the workspace for your projects, you can have several packages. 
 each package is a folder containing the minimum specifications of its 
 CMake build and the required packages.
