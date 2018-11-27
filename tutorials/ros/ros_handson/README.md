@@ -314,7 +314,8 @@ Put the file in `~/ros_ws/src/this_tutorial/src/keras-application.py` and run it
 ```
 rosrun this_tutorial keras-application.py
 ```
-OpenCV is going to open a window from camera content. Pressing `r` will run the recognition process and `q` exits the window. In another terminal you can read the published messages as before:
+
+This probably propts an error. In order to fix this problem, you can download the dummy elephant image to start the keras sessions. You can find the dummy file in `src/elephant.jpg`. Npow, try again. OpenCV is going to open a window from camera content. Pressing `r` will run the recognition process and `q` exits the window. In another terminal you can read the published messages as before:
 
 ```
 rosrun this_tutorial feedback.py
