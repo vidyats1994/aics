@@ -11,6 +11,15 @@ The introductory slides for ROS is available here:
 * Ubuntu 16.04 
 * ROS Kinetik
 
+You can install latest version of Virtual Box and its extesion pack, then download/run this Ubuntu machine with ROS:
+https://gubox.box.com/s/spdikbi252bcrgy3qbwn963y0vqjfzqw
+
+(additional intorduction for kinect)
+* Standalone Ubuntu machine (not a virtual machine) 16.04
+* Kinect/RGBD device
+* freenect driver on Ubuntu and ROS `sudo apt-get install freenect ros-kinetic-freenect-stack`
+
+
 # Step-by-step 
 
 Follow these steps:
@@ -253,4 +262,64 @@ rosbag play <your bagfile>
 ### 6. Explore ROS tutorials
 
 It is very common to have several nodes running which depend on each other at the same time. The command for running them at once can be packed into a `roslaunch` script. You can read about this among other related topics in [ROS tutorials](http://wiki.ros.org/ROS/Tutorials). 
+
+
+
+# Understanding Kinect and machine leanring with ROS
+
+### Working with Kinect
+
+You can test if Kinect is connected and working on Ubuntu by running the test commands:
+
+```
+freenect-glview
+```
+
+You can also test other features such as its motor:
+
+```
+freenect-tiltdemo
+```
+In order to read from Kinect sensors in ROS, you need to run all topics of sensors with the following command:
+
+```
+roslaunch freenect_launch freenect.launch
+```
+
+Then in another terminal, you can check if all topics are working:
+
+Just for listing them:
+```
+rostopic list
+```
+
+Try to read the data:
+```
+rostopic echo /camera/rgb/image_color
+```
+
+In order to visualise them you can use `rviz` to map them in 3D space. Open `rviz` with the following command:
+
+```
+rosrun rviz rviz
+```
+
+Now, include the point clouds and set the related channels to depth and color images.
+
+### Running Keras
+
+We can improve the greeter node from previous section with image recognition. Download `keras-application.py` and try to understand the code. This node requires images from camera. You can use Kinect camera with `freenect_launch`. 
+Put the file in `~/ros_ws/src/this_tutorial/src/keras-application.py` and run it:
+
+```
+rosrun this_tutorial keras-application.py
+```
+OpenCV is going to open a window from camera content. Pressing `r` will run the recognition process and `q` exits the window. In another terminal you can read the published messages as before:
+
+```
+rosrun this_tutorial feedback.py
+```
+
+
+
 
