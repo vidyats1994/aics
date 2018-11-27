@@ -265,7 +265,7 @@ It is very common to have several nodes running which depend on each other at th
 
 
 
-# Understanding Kinect and machine leanring with ROS
+# Understanding Kinect and Keras with ROS
 
 ### Working with Kinect
 
