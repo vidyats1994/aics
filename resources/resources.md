@@ -16,9 +16,10 @@ This folder contains some resources (code and datasets) useful for your project.
 	  * Several corpora on GRE from Margaret Mitchell: http://www.m-mitchell.com/corpora.html
   - References:
       * GRE: http://web.science.mq.edu.au/~jviethen/GREbib.php
+  - A list of vision and language corpora from the iV&L consortium (very good): https://ivl-net.eu/repositories/data-resources/
+  - A list of code from the iV&L consortium: https://ivl-net.eu/repositories/software-resources/
    
   
-
 
 
 ## External
