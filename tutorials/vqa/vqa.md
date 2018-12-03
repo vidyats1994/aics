@@ -1,6 +1,7 @@
 ## Requirements
-* Keras with Tensorflow
-* Preferablly access to GPU
+* Python3 with Keras with Tensorflow
+* Jupyter-notebook
+* Access to GPU for faster processing
 
 ## How
 
