@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{graphicx}  %%% for including graphics
+\usepackage{url}       %%% for including URLs
+\usepackage{palatino,eulervm}
+%\usepackage{times}
+\usepackage{natbib}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=25mm]{geometry}
+\usepackage{hyperref}
+\usepackage{sectsty}
+
+% Redefine the section headings
+\sectionfont{\normalsize \bfseries}
+\subsectionfont{\normalsize \normalfont \itshape}
+\subsubsectionfont{\normalsize \normalfont}
+%\paragraphfont{\normalfont \MakeUppercase} %itshape
+\paragraphfont{\normalfont \itshape} %itshape
+
+
+
+\title{\textbf{How to write a project report}}
+\date{\normalsize \today}
+
+\author{\normalsize Simon Dobnik\\
+       \normalsize Centre for Linguistic Theory and Studies in Probability (CLASP) \\
+       \normalsize University of Gothenburg \\
+       \normalsize \texttt{simon.dobnik@gu.se}
+  % \and Someone Else\\
+  %      Another Affiliation\\
+  %      \texttt{another@email.org}
+}
+
+
+\begin{document}
+\maketitle
+% \thispagestyle{empty}
+% \pagestyle{empty}
+
+\section{About a project report}\label{how-to-write-a-project-report}
+
+Write the project report like a scientific article. A report should be a
+self contained piece of good scientific writing which means that it
+should be clear to any reader in language technology. Although this is
+strictly not necessary it also good to format it, like a scientific
+article. In computational linguistics or language technology the
+\href{http://acl2017.org/calls/papers/}{ACL style} is very popular
+(\href{http://acl2017.org/downloads/acl17-latex.zip}{LaTeX} and
+\href{http://acl2017.org/downloads/acl17-word.zip}{Word}).
+
+
+\section{Headings to include}
+
+\subsection{Abstract}\label{abstract}
+
+Write a few sentences which summarise the work in a way that is
+understandable to someone working in language technology. Why? How?
+Results. Conclusions. Not more than 100 words.
+
+\subsection{Introduction}\label{introduction}
+
+Give some background about the problem you are trying to solve. You do
+this by gradually focusing into to question you are going to investigate
+by discussion of the previous work ending with the work that this paper
+more closely relates to. What question have been answered in this work
+and which questions are outstanding that we will be dealt with in this
+paper? Finally, state a list of steps that will be taken to address
+these issues and a description of how this paper is organised (In
+Section 2 we\ldots{})
+
+\subsection{Materials and methods}\label{materials-and-methods}
+
+Here you describe your toolkit and tools that you will use to test and
+answer these questions. Describe how the experiment(s) have been carried
+out in detail. What is the hypothesis that the experiment should test or
+more generally what should the experiment show? Not that hypotheses are
+different and more specific than open research questions from the
+introduction. There are a way of testing these research questions.
+
+\subsection{Results}\label{results}
+
+What did you find out? First show the data and then draw conclusions of
+the data to support your previous hypotheses/predictions. Have
+hypotheses been confirmed or rejected? The conclusions are your results.
+
+Support your argument with figures and tables. It should be possible to
+read figures and tables without the text and understand the text without
+looking at figures and tables. Refer to each figure or table at least
+once in the text.
+
+\subsection{Discussion}\label{discussion}
+
+In this section you discuss your results in relation to the open
+research questions from the introduction. To what extent do result
+answer them? If applicable, look into the literature for further
+explanations for your findings which may give you further suggestions:
+new findings that could not be anticipated from the beginning. Emphasise
+and discuss in what ways your work is relevant for the chosen research
+area.
+
+\subsection{Conclusions and further
+work}\label{conclusions-and-further-work}
+
+Summarise what has been done in the preceding sections and point out
+areas where the work described in this report could be extended in the
+future.
+
+
+\section{Reports about joint work}
+
+If a report is about joint work of several people, then you should
+mark unambiguously (as with the code, datasets and other resources)
+who wrote what part of the report. For example, this can be done by
+putting your initials in the headings above the text that you wrote;
+e.g. \textbf{Pre-training features with CNN (FT)} where FT are your
+initials. Try to use headings that describe the sub-parts of the
+project that you were responsible for, otherwise indicate the relevant
+parts of the text with your initials inline.
+
+As always, you may and you are encouraged to discuss the projects with
+each other (and with the teachers of course!) but what you hand in
+must be written (or programmed) by you rather than being copied from
+someone else. In case of doubt, please have a look at
+\href{http://www.cl.cam.ac.uk/teaching/exams/plagiarism.html}{https://goo.gl/JbhCVU}
+or ask us.
+
+
+% \bibliographystyle{chicago}
+% \bibliography{bibliography}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% mode: flyspell
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% TeX-PDF-mode: t
+%%% coding: utf-8
+%%% ispell-local-dictionary: "british"
+%%% End:
