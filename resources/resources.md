@@ -3,6 +3,13 @@
 
 This folder contains some resources (code and datasets) useful for your project.
 
+## Image classification
+
+  - [Basic classification: Classify images of clothing](https://www.tensorflow.org/tutorials/keras/classification)
+  - [Building powerful image classification models using very little data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+  - [How to Develop a Deep Learning Photo Caption Generator from Scratch](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)
+
+
 
 ## Local
 
