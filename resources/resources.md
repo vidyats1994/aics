@@ -3,6 +3,13 @@
 
 This folder contains some resources (code and datasets) useful for your project.
 
+## Lecture 2: pyTTR
+
+  - [pyTTR](https://github.com/GU-CLASP/pyttr/blob/master/ttr-overview-aics2019.ipynb) is an implementation of TTR in Python
+  - An application of pyTTR code to image classification with DNNs and visual question answering: A. Matsson, S. Dobnik, and S. Larsson. ImageTTR: Grounding Type Theory with Records in image classification for visual question answering. In R. Osswald, C. Retoré, and P. Sutton, editors, Proceedings of the IWCS 2019 Workshop on Computing Semantics with Types, Frames and Related Structures, pages 55–64, Gothenburg, Sweden, June 2019. Association for Computational Linguistics. [paper](https://www.aclweb.org/anthology/W19-1007/) and [code](https://github.com/arildm/imagettr) The paper is based on Arild's masters thesis which is turn is based on his AICS course project.
+
+
+
 ## Image classification
 
   - [Basic classification: Classify images of clothing](https://www.tensorflow.org/tutorials/keras/classification)
