@@ -26,7 +26,7 @@ Or
 
 ## 1. Dive Into ROS
 
-In this section, we provide essential information and examples to build a ros worksace, and run python programs in ROS. 
+In this section, we provide essential information and examples to build a ros worksape, and run python programs in ROS. 
 
 Most part of this section is also covered in more details in [ROS official tutorials](http://wiki.ros.org/ROS/Tutorials).
 
