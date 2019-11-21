@@ -1,7 +1,7 @@
 # Hands-on Robot Operating System (ROS)
 
 This is a quick tutorial for ROS 
-With some plactical examples. 
+with some plactical examples. 
 On the first section,
 you are going to learn 
 how to setup the workspace,
