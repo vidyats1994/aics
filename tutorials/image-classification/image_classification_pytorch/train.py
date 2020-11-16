@@ -96,25 +96,36 @@ def main(args):
     
     '''
     main function
+    - describes the whole model pipeline
+    - it should refer to a separate train function, validation function
     - loads datasets, initializes models and hyperparameters
     - sets learning rate and optimizer, passes arguments to the training loop
     '''
     
+    # load my hyperparameters
     with open(args.config_file, 'r') as f:
         hyps = json.load(f)
 
+    # why do we need to transform images?
+    # - images differ from each other size-wise
+    # - random cropping can be helpful because it allows your model to learn different
+    # ways your object can be represented
+    # - normalisation helps to speed up training / utilise pre-trained models better
     transform = transforms.Compose(
             [
                 transforms.Resize((256, 256)),
-                #transforms.RandomCrop((299, 299)),
+                #transforms.RandomCrop((x, x)),
                 transforms.ToTensor(),
                 transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
             ]
         )
-
+    
+    
+    # load the dataset
     dataset = cats_dogs_dataset(args.data_dir, args.annotations_file, transform=transform)
+    
     # split dataset into training and validation (25k : 20k + 5k)
-    train_set, validation_set = torch.utils.data.random_split(dataset, [20000 ,5000])
+    train_set, validation_set = torch.utils.data.random_split(dataset, [20000 , 5000])
     
     # train loader
     train_loader = DataLoader(dataset=train_set, shuffle=bool(hyps['shuffle']),
@@ -124,6 +135,7 @@ def main(args):
     validation_loader = DataLoader(dataset=validation_set, shuffle=bool(hyps['shuffle']),
                                    batch_size=hyps['batch_size'], num_workers=hyps['num_workers'],
                                    pin_memory=bool(hyps['pin_memory']))    
+    
     
     # initialize and import model to GPU
     model = CNN().to(device)

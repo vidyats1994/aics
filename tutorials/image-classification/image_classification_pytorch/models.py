@@ -14,6 +14,7 @@ class CNN(nn.Module):
     def __init__(self, num_classes=1):
         super(CNN, self).__init__()
         
+        # this VGG16 is trained on ImageNet
         self.vgg16 = models.vgg16(pretrained=True)
         
         self.classifier = nn.Sequential(OrderedDict([
