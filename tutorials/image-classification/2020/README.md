@@ -2,7 +2,7 @@
 
 *models.py* describes the CNN model used to process images, extract their features and classify into *num_classes* number of classes.
 
-*dataset.py* is a script that is necessary to pre-process data for training, validation and testing. If you want to work with the raw data, it can be found on mlt-gpu under _/srv/data/aics/image-classification/2021/_.
+*dataset.py* is a script that is necessary to pre-process data for training, validation and testing. If you want to work with the raw data, it can be found on mlt-gpu under _/srv/data/aics/image-classification/2020/_.
 
 *config.json* is a standard file with hyperparameters. It is nice to have this file separately so that you can simply change information in this file only, if you want to re-train your model with different settings.
 
