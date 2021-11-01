@@ -1,0 +1,9 @@
+{
+    "num_epochs": 25,
+    "learning_rate": 0.01,
+    "batch_size": 64,
+    "shuffle": "True",
+    "pin_memory": "False",
+    "num_workers": 1
+    
+}
