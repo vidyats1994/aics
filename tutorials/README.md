@@ -33,3 +33,6 @@ A different method is to explicitly restrict your scripts to run on a specific g
 ```
 export CUDA_VISIBLE_DEVICES=INTEGER
 ```
+
+#### Project Submission
+By the end of the course, you are required to submit a project to get course credits. The submission consists of two parts: (1) a paper and (2) a public GitHub repository that accompanies your paper. Typically, you first run your code on mlt-gpu (e.g., as notebooks /.py scripts), and then you upload it to your GitHub repo (in the form of .py files and documentation in README.md). The project paper should be approximately around 6-8 pages, but it depends on each case individually. For project paper, we encourage you to use $\LaTeX{}$
