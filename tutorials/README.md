@@ -31,5 +31,5 @@ DEVICE = torch.device('cuda:INTEGER')
 A different method is to explicitly restrict your scripts to run on a specific gpu. Enter the following command in your terminal:  
 
 ```
-export CUDA_VISIBLE_DEVICES=INTEGER. 
+export CUDA_VISIBLE_DEVICES=INTEGER
 ```
