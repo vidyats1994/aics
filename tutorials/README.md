@@ -16,3 +16,4 @@ You often want to train your model overnight without breaking/stopping the train
 
 #### Where to store data / find data / set up permissions
 All data used in the course tutorials is accessible in ``/srv/data/aics``. There you can also find data from previous course iterations. When working with your own data, please store it in ``/scratch/yourName``, where 'yourName' is your gu-account. When you create your folder in scratch, ensure that everyone has access to it since your TAs will need to examine your code when looking at your project. Read more about it [here](https://help.ubuntu.com/community/FilePermissions). Generally, you want your TAs to write, read, and execute in your personal scratch folder.
+Always check if the dataset you work with is found somewhere on mlt-gpu, because it could have been used by other students or by your TAs. This way, you will make sure that you do not occupy extra space with yet another copy of the same dataset.
