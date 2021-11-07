@@ -19,12 +19,15 @@ All data used in the course tutorials is accessible in ``/srv/data/aics``. There
 Always check if the dataset you work with is found somewhere on mlt-gpu, because it could have been used by other students or by your TAs. This way, you will make sure that you do not occupy extra space with yet another copy of the same dataset.
 
 #### CUDA-related details (to be updated)
-Make sure that you set up a particular GPU for your scripts by putting, for example, the following lines in your code:
+Make sure that you set up a particular GPU for your scripts by putting, for example, the following lines in your code:  
 
-```os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID". 
-DEVICE = torch.device('cuda:INTEGER')```
+```
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID". 
+DEVICE = torch.device('cuda:INTEGER')
+```
 
 , where INTEGER is id of the gpu you want to use.
 
-A different method is to explicitly restrict your scripts to run on a specific gpu. Enter the following command in your terminal:
-```export CUDA_VISIBLE_DEVICES=INTEGER```
+A different method is to explicitly restrict your scripts to run on a specific gpu. Enter the following command in your terminal:  
+
+```export CUDA_VISIBLE_DEVICES=INTEGER```.
